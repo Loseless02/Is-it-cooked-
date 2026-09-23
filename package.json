@@ -1,0 +1,45 @@
+{
+  "name": "is-it-cooked",
+  "productName": "Is It Cooked?",
+  "version": "0.1.0",
+  "description": "Used PC checker. Pick what you need the PC for, run the tests, find out if it's cooked.",
+  "author": "Loseless02",
+  "homepage": "https://github.com/Loseless02/Is-it-cooked-#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loseless02/Is-it-cooked-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Loseless02/Is-it-cooked-/issues"
+  },
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.isitcooked.app",
+    "productName": "Is It Cooked",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "requestedExecutionLevel": "requireAdministrator",
+      "icon": "src/renderer/assets/icon.png"
+    },
+    "portable": {
+      "artifactName": "IsItCooked-${version}-portable.exe"
+    }
+  },
+  "dependencies": {
+    "systeminformation": "^5.33.13"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  }
+}

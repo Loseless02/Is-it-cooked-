@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: mediastream:"
+    />
+    <title>Is It Cooked?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="brand" id="brand" title="Back to start">
+        <span class="brand-logo" id="brand-logo"></span>
+        <span class="brand-name">Is It Cooked<span class="q">?</span></span>
+      </button>
+      <ol class="steps" id="steps">
+        <li data-step="pick">Order</li>
+        <li data-step="cook">Cook</li>
+        <li data-step="taste">Taste test</li>
+        <li data-step="verdict">Verdict</li>
+      </ol>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <div id="overlay-root"></div>
+    <div id="toast-root" aria-live="polite"></div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
