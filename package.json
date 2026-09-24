@@ -1,7 +1,7 @@
 {
   "name": "is-it-cooked",
   "productName": "Is It Cooked",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Used PC checker. Pick what you need the PC for, run the tests, find out if it's cooked.",
   "author": "Loseless02",
   "license": "MIT",
@@ -29,12 +29,13 @@
     ],
     "win": {
       "target": "portable",
-      "requestedExecutionLevel": "requireAdministrator",
+      "requestedExecutionLevel": "asInvoker",
       "icon": "src/renderer/assets/icon.png"
     },
     "portable": {
       "artifactName": "IsItCooked-${version}-portable.exe",
-      "splashImage": "build/splash.bmp"
+      "splashImage": "build/splash.bmp",
+      "requestExecutionLevel": "highest"
     }
   },
   "dependencies": {
