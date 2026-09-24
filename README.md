@@ -141,3 +141,7 @@ Issues and pull requests are welcome. Especially useful:
 ## Security
 
 See [SECURITY.md](SECURITY.md) for how to report vulnerabilities and what the app does (and doesn't do) on your system.
+
+## License
+
+[MIT](LICENSE) © Loseless02

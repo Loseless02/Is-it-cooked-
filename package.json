@@ -4,6 +4,7 @@
   "version": "0.1.1",
   "description": "Used PC checker. Pick what you need the PC for, run the tests, find out if it's cooked.",
   "author": "Loseless02",
+  "license": "MIT",
   "homepage": "https://github.com/Loseless02/Is-it-cooked-#readme",
   "repository": {
     "type": "git",
