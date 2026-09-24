@@ -1,7 +1,7 @@
 {
   "name": "is-it-cooked",
-  "productName": "Is It Cooked?",
-  "version": "0.1.0",
+  "productName": "Is It Cooked",
+  "version": "0.1.1",
   "description": "Used PC checker. Pick what you need the PC for, run the tests, find out if it's cooked.",
   "author": "Loseless02",
   "homepage": "https://github.com/Loseless02/Is-it-cooked-#readme",
@@ -32,7 +32,8 @@
       "icon": "src/renderer/assets/icon.png"
     },
     "portable": {
-      "artifactName": "IsItCooked-${version}-portable.exe"
+      "artifactName": "IsItCooked-${version}-portable.exe",
+      "splashImage": "build/splash.bmp"
     }
   },
   "dependencies": {
